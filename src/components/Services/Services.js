@@ -9,7 +9,7 @@ const Services = () => {
     { arrange: "s/5", name: "inbound marketing" },
   ];
   return (
-    <div className=" h-[80vh] font-text border-t-[2px] border-black grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-x-7  items-start py-4">
+    <div className=" h-[80vh] font-text border-t-[1px] border-black grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-x-7  items-start py-4">
       <div className=" flex gap-4  col-span-2 text-text items-center uppercase">
         <Icons.FaCircle /> Service pillars
       </div>

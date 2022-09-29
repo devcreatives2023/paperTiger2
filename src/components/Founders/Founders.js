@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Founders = () => {
   return (
     <div className="flex flex-col gap-y-10">
-      <div className="  font-text border-t-[2px] grid-cols-4 gap-x-[40px] border-black grid items-start py-4">
+      <div className="  font-text border-t-[1px] grid-cols-4 gap-x-[40px] border-black grid items-start py-4">
         <div className=" flex gap-4 col-span-1  text-text items-center uppercase">
           <Icons.FaCircle /> Founders
         </div>

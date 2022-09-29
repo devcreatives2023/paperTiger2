@@ -3,22 +3,22 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily:{
-        title:"'Anton', sans-serif",
-        text:"'Hind', sans-serif",
-        parg:"'PT Sans Narrow', sans-serif"
+      fontFamily: {
+        title: "'Anton', sans-serif",
+        text: "'Hind', sans-serif",
+        parg: "'PT Sans Narrow', sans-serif",
       },
       padding: {
-        xl:"0.5rem 2rem",
-        main:"0.5rem 1.5rem"
-
+        xl: "0.5rem 2rem",
+        main: "0.5rem 1.5rem",
       },
       fontSize: {
-        text:"1.3rem",
-        items:"1.8rem"
+        text: "1.3rem",
+        items: "1.8rem",
       },
       backgroundColor: {
-        body:"rgb(242, 243, 244)"
+        body: "rgb(242, 243, 244)",
+        icons: "rgba(157, 157, 157, 0.497)",
       },
       screens: {
         xsm: "445px",
@@ -31,4 +31,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

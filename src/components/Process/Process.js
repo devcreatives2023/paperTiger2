@@ -26,7 +26,7 @@ const Process = () => {
   ];
   return (
     <div
-      className=" h-[90vh] font-text border-t-[2px] border-black grid
+      className=" h-[90vh] font-text border-t-[1px] border-black grid
     xl:grid-cols-4 lg:grid-cols-4 grid-cols-1   items-start py-4"
     >
       <div className=" flex gap-4 col-span-2  xl:text-text lg:text-text items-center uppercase">
