@@ -6,3 +6,9 @@
 /* text */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Allerta+Stencil&family=Anton&family=Barlow:wght@300;400&family=EB+Garamond:wght@400;500&family=Henny+Penny&family=Hind:wght@300;400&family=Inter+Tight:wght@100&family=Luckiest+Guy&family=Nunito+Sans:wght@200;300&family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Raleway:ital,wght@0,200;0,400;1,600&family=Roboto+Slab:wght@300;400&family=Spectral:ital,wght@1,200;1,300;1,400&family=Sriracha&family=Tiro+Telugu&family=Titillium+Web:ital,wght@0,200;1,300&display=swap');
 
+/* small text */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Allerta+Stencil&family=Anton&family=Barlow:wght@300;400&family=EB+Garamond:wght@400;500&family=Henny+Penny&family=Hind:wght@300;400&family=Inter+Tight:wght@100&family=Luckiest+Guy&family=Nunito+Sans:wght@200;300&family=PT+Sans+Narrow&family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Raleway:ital,wght@0,200;0,400;1,600&family=Roboto+Slab:wght@300;400&family=Spectral:ital,wght@1,200;1,300;1,400&family=Sriracha&family=Tiro+Telugu&family=Titillium+Web:ital,wght@0,200;1,300&display=swap');
+
+body{
+    overflow-x: hidden;
+}
