@@ -29,7 +29,7 @@ const Home = () => {
         <Navbar color="black" contact="1.1rem" position="top-0" />
         <div
           className="uppercase  xl:mt-12 pt-[60px]
-       lg:mt-12 text-center justify-center items-center relative top-10"
+       lg:mt-12 text-center justify-center items-center relative top-10 p-5 "
         >
           <p className=" xl:text-xl   lg:text-xl text-[10px]">
             Cat slap dog in face russian blue chase mice
