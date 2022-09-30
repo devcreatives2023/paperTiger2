@@ -21,8 +21,11 @@ const Home = () => {
     colorOutput
   );
   return (
-    <motion.div transition={{duration:1,ease:"easeInOut"}} style={{background}} >
-      <motion.div  className=" xl:mt-[-50px] lg:mt-[-50px] mt-[-40px]">
+    <motion.div
+      transition={{ duration: 1, ease: "easeInOut" }}
+      className="bg-body"
+    >
+      <motion.div className=" xl:mt-[-50px] lg:mt-[-50px] mt-[-40px]">
         <Navbar color="black" contact="1.1rem" position="top-0" />
         <div
           className="uppercase  xl:mt-12 pt-[60px]

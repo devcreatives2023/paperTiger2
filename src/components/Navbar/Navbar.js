@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Icons } from "../../constants";
 import { motion } from "framer-motion";
-
+import Sidebar from "./Sidebar";
 // variants for navbar links motion with underline
 const underline = {
   default: {
@@ -37,14 +37,26 @@ const contactVariants = {
     },
   },
 };
-
+// sidebar
+const menuVariants = {
+  opened: {
+    opacity: 1,
+    x: 0,
+  },
+  closed: {
+    opacity: 0,
+    x: 100,
+  },
+};
 const Navbar = ({ color, contact }) => {
+  // sidebar
+  const [show, setShow] = React.useState(false);
+  // add motion to contact us
   const [contactus, setContactus] = React.useState(false);
   const contactmotion = () => {
     setContactus(!contactus);
   };
 
-  const [show, setShow] = React.useState(false);
   const [lastscrollY, setLastScrollY] = React.useState(0);
   // show and hidden navbar with scroll
   const controlNavbar = () => {
@@ -72,9 +84,9 @@ const Navbar = ({ color, contact }) => {
 
   return (
     <nav
-      className={`fixed xl:w-[100%] lg:w-[100%] h-[40px] xl:h-[80px] w-screen  xl:py-3 lg:py-3 py-[52px] ${lastscrollY?" bg-body ":" bg-transparent"} z-10 transition-all duration-300   ${
-        show && "hidden"
-      }`}
+      className={`fixed xl:w-[100%] lg:w-[100%] h-[40px] xl:h-[80px] w-screen  xl:py-3 lg:py-3 py-[52px] ${
+        lastscrollY ? " bg-body " : " bg-transparent"
+      } z-10 transition-all duration-300   ${show && "hidden"}`}
     >
       <div
         className=" grid grid-cols-2 font-text xl:p-xl transition   items-center lg:p-xl xl:px-7 lg:px-2 "
@@ -152,9 +164,42 @@ const Navbar = ({ color, contact }) => {
           </motion.button>
         </motion.div>
       </div>
-      <div className=" inline xl:hidden lg:hidden">
-        <Icons.AiFillHeart />
+      <div
+        className="visible  xl:invisible
+         lg:hidden md:inline-block w-[100%] h-[100%]"
+        style={{ transition: "all 0.5s ease-in" }}
+      >
+        <Icons.BsTwitter
+          onClick={() => setShow(!show)}
+          className="absolute -right-[0px] 
+           text-[3rem] mt-5"
+        />
+        <motion.nav
+          initial={false}
+          variants={menuVariants}
+          animate={show ? "opened" : "closed"}
+          className=" bg-main h-screen w-[400px] fixed top-0 p-10 flex flex-col   "
+        >
+          <motion.button
+            className="reltive left-0 top-0 text-[gold]"
+            onClick={() => setShow(!show)}
+          >
+            <Icons.BsTwitter />
+          </motion.button>
+          <ul className="flex flex-col items-start  leading-[70px]  text-2xl">
+            <li className=" hover:text-[gold] hover:opacity-[0.8]">
+              <Link to="/work">work</Link>
+            </li>
+            <li className=" hover:text-[gold] hover:opacity-[0.8]">
+              <Link to="/">about</Link>
+            </li>
+            <li className=" hover:text-[gold] hover:opacity-[0.8]">
+              <Link to="/contact">contact</Link>
+            </li>
+          </ul>
+        </motion.nav>
       </div>
+
     </nav>
   );
 };
