@@ -172,13 +172,13 @@ const Navbar = ({ color, contact }) => {
   lg:hidden md:inline-block w-[100%] h-[100%]"
   style={{ transition: "all 0.5s ease-in" }}
       >
-        {/* <button onClick={() => setShow(!show)}>
+        <button onClick={() => setShow(!show)}>
           <Icons.HiOutlineMenuAlt4
             className="absolute right-[30px] 
             text-[2rem] top-2"
             />
         </button>
-        <motion.nav
+      {/*   <motion.nav
           initial={false}
           variants={menuVariants}
           animate={show ? "opened" : "closed"}
