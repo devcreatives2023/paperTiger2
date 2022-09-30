@@ -32,9 +32,10 @@ const PaperTiger = () => {
             duration: 1,
           },
         }}
-        className="flex flex-col xl:justify-center lg:justify-center  xl:items-center lg:items-center px-5"
+        className="flex flex-col xl:justify-center lg:justify-center  p-3  xl:items-center lg:items-center px-5"
       >
-        <p className=" uppercase xl:text-[12px] text-[8px] lg:text-[12px] text-center   w-[300px]">
+        <p className=" uppercase xl:text-[12px] text-[8px] lg:text-[12px] w-[20%] xl:w-[300px] lg:w-[300px]
+        text-center   ">
           Aliquid veritatis cupidatat yet reprehenderit for omnis so ad. Minima
           ad and aliquam
         </p>
