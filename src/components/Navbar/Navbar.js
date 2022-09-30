@@ -41,11 +41,11 @@ const contactVariants = {
 const menuVariants = {
   opened: {
     opacity: 1,
-    x: 0,
+    y: 0,
   },
   closed: {
     opacity: 0,
-    x: 100,
+    y: 40,
   },
 };
 const Navbar = ({ color, contact }) => {
@@ -83,6 +83,7 @@ const Navbar = ({ color, contact }) => {
   }, [lastscrollY]);
 
   return (
+    <>
     <nav
       className={`fixed xl:w-[100%] lg:w-[100%] h-[40px] xl:h-[80px] w-screen  xl:py-3 lg:py-3 py-[52px] ${
         lastscrollY ? " bg-body " : " bg-transparent"
@@ -93,7 +94,7 @@ const Navbar = ({ color, contact }) => {
         style={{ color: color }}
       >
         <div className="  flex gap-x-[137px] ">
-          <div className=" flex text-center font-semibold xl:text-2xl lg:text-xl tracking-wider">
+          <div className=" flex text-center font-semibold xl:text-2xl lg:text-xl text-[18px] tracking-wider">
             PaperTiger
           </div>
           <div className=" invisible xl:visible lg:visible ">
@@ -164,44 +165,48 @@ const Navbar = ({ color, contact }) => {
           </motion.button>
         </motion.div>
       </div>
+    </nav>
       <div
         className="visible  xl:invisible
          lg:hidden md:inline-block w-[100%] h-[100%]"
         style={{ transition: "all 0.5s ease-in" }}
       >
-        <Icons.BsTwitter
-          onClick={() => setShow(!show)}
-          className="absolute -right-[0px] 
-           text-[3rem] mt-5"
-        />
+        <button onClick={() => setShow(!show)}>
+          <Icons.HiOutlineMenuAlt4
+            className="absolute right-[30px] 
+          text-[2rem] top-2"
+          />
+        </button>
         <motion.nav
-          initial={false}
+          // initial={false}
           variants={menuVariants}
           animate={show ? "opened" : "closed"}
-          className=" bg-main h-screen w-[400px] fixed top-0 p-10 flex flex-col   "
+          className=" bg-[#eeeeeee8] h-screen fixed top-[-90px] w-[100%] left-0 right-0 z-10 p-10 flex flex-col   "
         >
           <motion.button
-            className="reltive left-0 top-0 text-[gold]"
+            className="absolute right-12 text-[22px] "
             onClick={() => setShow(!show)}
           >
-            <Icons.BsTwitter />
+            <Icons.GiTireIronCross />
           </motion.button>
-          <ul className="flex flex-col items-start  leading-[70px]  text-2xl">
-            <li className=" hover:text-[gold] hover:opacity-[0.8]">
+          <ul className="flex flex-col items-center w-[50%] m-auto  leading-[70px]  text-2xl">
+            <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
               <Link to="/work">work</Link>
             </li>
-            <li className=" hover:text-[gold] hover:opacity-[0.8]">
+            <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
               <Link to="/">about</Link>
             </li>
-            <li className=" hover:text-[gold] hover:opacity-[0.8]">
-              <Link to="/contact">contact</Link>
+            <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
+              <Link to="/contact">Careers</Link>
+            </li>
+            <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
+              <Link to="/contact">Contact us</Link>
             </li>
           </ul>
         </motion.nav>
       </div>
-
-    </nav>
-  );
+        </>
+);
 };
 
 export default Navbar;
