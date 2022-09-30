@@ -54,7 +54,7 @@ const Founders = () => {
     setMouse2(!isMouse);
   };
   return (
-    <div className="flex flex-col gap-y-10 xl:h-[70vh] lg:h-[70vh] h-[50vh] w-screen">
+    <div className="flex flex-col gap-y-10 xl:h-[60vh] lg:h-[60vh] h-[50vh] w-screen">
       <motion.div
         onMouseEnter={showImg}
         onMouseLeave={showImg}

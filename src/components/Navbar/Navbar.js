@@ -72,16 +72,16 @@ const Navbar = ({ color, contact }) => {
 
   return (
     <nav
-      className={`fixed xl:w-[100%] lg:w-[100%] h-[40px] w-screen  xl:py-3 lg:py-3 py-[52px] bg-body z-10 transition-all duration-300   ${
+      className={`fixed xl:w-[100%] lg:w-[100%] h-[40px] xl:h-[80px] w-screen  xl:py-3 lg:py-3 py-[52px] ${lastscrollY?" bg-body ":" bg-transparent"} z-10 transition-all duration-300   ${
         show && "hidden"
       }`}
     >
       <div
-        className=" grid grid-cols-2 font-text xl:p-xl transition   items-center lg:p-xl xl:px-2 lg:px-2 "
+        className=" grid grid-cols-2 font-text xl:p-xl transition   items-center lg:p-xl xl:px-7 lg:px-2 "
         style={{ color: color }}
       >
         <div className="  flex gap-x-[137px] ">
-          <div className=" flex text-center font-semibold xl:text-xl lg:text-xl tracking-wider">
+          <div className=" flex text-center font-semibold xl:text-2xl lg:text-xl tracking-wider">
             PaperTiger
           </div>
           <div className=" invisible xl:visible lg:visible ">
@@ -126,7 +126,7 @@ const Navbar = ({ color, contact }) => {
           </div>
         </div>
         <motion.div
-          className="flex justify-end gap-x-3 items-end  cursor-pointer   invisible xl:visible lg:visible"
+          className="flex justify-end gap-x-3 w-[200px] ml-auto items-end  cursor-pointer   invisible xl:visible lg:visible"
           style={{ fontSize: contact }}
           onMouseEnter={contactmotion}
           onMouseLeave={contactmotion}

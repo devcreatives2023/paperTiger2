@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import { images, Icons } from "../../constants";
 import { motion } from "framer-motion";
 const PaperTiger = () => {

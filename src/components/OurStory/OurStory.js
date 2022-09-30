@@ -3,8 +3,8 @@ import { Icons } from "../../constants";
 
 const OurStory = () => {
   return (
-    <div className="xl:h-[50vh] lg:h-[50vh] h-[80vh] font-text border-t-[1px] border-black grid
-     xl:grid-cols-4 lg:grid-cols-4 grid-cols-1 xl:gap-x-7 lg:gap-x-7    items-start py-4">
+    <div className="xl:h-[60vh] lg:h-[60vh] h-[80vh] font-text border-t-[1px] border-black grid
+     xl:grid-cols-4 lg:grid-cols-4 grid-cols-1 xl:gap-x-7 lg:gap-x-7 pt-10 xl:mt-[-8px] lg:mt-[-8px]   items-start py-4">
       <div className=" flex gap-4  xl:text-text lg:text-text items-center uppercase">
         <Icons.FaCircle /> Our Story
       </div>
