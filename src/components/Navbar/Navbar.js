@@ -177,7 +177,7 @@ const Navbar = ({ color, contact }) => {
             text-[2rem] top-2"
             />
         </button>
-      {/*   <motion.nav
+        <motion.nav
           initial={false}
           variants={menuVariants}
           animate={show ? "opened" : "closed"}
@@ -203,7 +203,7 @@ const Navbar = ({ color, contact }) => {
               <Link to="/contact">Contact us</Link>
             </li>
           </ul>
-        </motion.nav> */}
+        </motion.nav>
       </div>
         </>
 );
