@@ -54,13 +54,15 @@ const Founders = () => {
     setMouse2(!isMouse);
   };
   return (
-    <div className="flex flex-col gap-y-10 h-[70vh]">
+    <div className="flex flex-col gap-y-10 xl:h-[70vh] lg:h-[70vh] h-[50vh] w-screen">
       <motion.div
         onMouseEnter={showImg}
         onMouseLeave={showImg}
-        className="  font-text border-t-[1px] grid-cols-4 gap-x-[40px] h-[12vh] border-black grid items-start py-4"
+        className="  font-text border-t-[1px] xl:grid-cols-4 lg:grid-cols-4 grid-cols-2 
+        
+        xl:gap-x-[40px] lg:gap-x-[40px]  xl:h-[12vh]  lg:h-[12vh] border-black grid items-start py-4"
       >
-        <div className=" flex gap-4 col-span-1 text-text items-center uppercase">
+        <div className=" flex gap-4 col-span-1 xl:text-text lg:text-text  items-center uppercase">
           <Icons.FaCircle /> Founders
         </div>
         <div className="">
@@ -74,12 +76,13 @@ const Founders = () => {
              transition-300 h-[450px] object-cover left-[-90px] z-10"
           />
         </div>
-        <div className=" col-span-2 grid grid-cols-2 ">
-          <div className=" flex font-parg  font-semibold text-[2rem]  items-center uppercase">
+        <div className="pr-3 col-span-2 grid grid-cols-2 ">
+          <div className=" flex font-parg  font-semibold xl:text-[2rem] lg:text-[2rem]  items-center uppercase">
             John Smith
           </div>
 
-          <div className=" flex flex-col gap-y-2 font-parg justify-center text-text items-center ">
+          <div className=" flex flex-col gap-y-2 
+          font-parg justify-center xl:text-text lg:text-text xl:items-center lg:items-center">
             <p>President </p>
             <p>
               if ur interstedi hiring us ,
@@ -103,9 +106,9 @@ const Founders = () => {
       <motion.div
         onHoverStart={showImg2}
         onHoverEnd={showImg2}
-        className="  font-text border-t-[1px] grid-cols-4 gap-x-[40px] h-[20vh] border-black grid items-start py-4"
+        className="  font-text border-t-[1px] xl:grid-cols-4 lg:grid-cols-4 grid-cols-2 xl:gap-x-[40px] lg:gap-x-[40px] xl:h-[20vh] lg:h-[20vh] border-black grid items-start py-4"
       >
-        <div className=" flex gap-4 col-span-1 text-text items-center uppercase"></div>
+        <div className=" flex flex-col xl:flex-row lg:flex-row gap-4 col-span-1 text-text items-center uppercase"></div>
         <div className="">
           {/* <motion.img
             initial="exit"
@@ -118,11 +121,11 @@ const Founders = () => {
           /> */}
         </div>
         <div className=" col-span-2 grid grid-cols-2 ">
-          <div className=" flex font-parg  font-semibold text-[2rem]  items-center uppercase">
+          <div className=" flex font-parg  font-semibold xl:text-[2rem] lg:text-[2rem]  items-center uppercase">
             Eren yeger
           </div>
 
-          <div className=" flex flex-col gap-y-2 font-parg justify-center text-text items-center ">
+          <div className=" flex flex-col gap-y-2 font-parg justify-center  xl:text-text lg:text-text  xl:items-center lg:tems-center ">
             <p>Chef </p>
             <p>
               if ur interstedi hiring us ,

@@ -72,16 +72,16 @@ const Navbar = ({ color, contact }) => {
 
   return (
     <nav
-      className={`fixed w-[100%] py-3 bg-body z-10 transition-all duration-300   ${
+      className={`fixed xl:w-[100%] lg:w-[100%] h-[40px] w-screen  xl:py-3 lg:py-3 py-[52px] bg-body z-10 transition-all duration-300   ${
         show && "hidden"
       }`}
     >
       <div
-        className=" grid grid-cols-2 font-text xl:p-xl transition   items-center lg:p-xl px-2"
+        className=" grid grid-cols-2 font-text xl:p-xl transition   items-center lg:p-xl xl:px-2 lg:px-2 "
         style={{ color: color }}
       >
         <div className="  flex gap-x-[137px] ">
-          <div className=" flex items-center font-semibold text-2xl tracking-wider">
+          <div className=" flex text-center font-semibold xl:text-xl lg:text-xl tracking-wider">
             PaperTiger
           </div>
           <div className=" invisible xl:visible lg:visible ">
@@ -132,10 +132,10 @@ const Navbar = ({ color, contact }) => {
           onMouseLeave={contactmotion}
         >
           <motion.p
-              initial="enter"
-              variants={contactVariants}
-              exit="enter"
-              animate={contactus ? "exit" : "enter"}
+            initial="enter"
+            variants={contactVariants}
+            exit="enter"
+            animate={contactus ? "exit" : "enter"}
             className=" rounded-[60px] py-1 px-4 border text-center  uppercase font-semibold  "
             style={{ borderColor: color }}
           >
@@ -151,6 +151,9 @@ const Navbar = ({ color, contact }) => {
             <Icons.FiArrowDownRight />
           </motion.button>
         </motion.div>
+      </div>
+      <div className=" inline xl:hidden lg:hidden">
+        <Icons.AiFillHeart />
       </div>
     </nav>
   );

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Icons } from '../../constants'
 const Nav = () => {
   return (
-    <div className=' text-white '>
+    <div className=' text-white  invisible xl:visible lg:visible'>
         <div
         className=" grid grid-cols-2 font-text xl:p-xl  items-center lg:p-xl px-2"
       >

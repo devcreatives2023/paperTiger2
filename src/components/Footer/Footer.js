@@ -7,12 +7,12 @@ import Nav from "./Nav";
 const Footer = () => {
   return (
     <>
-    <div className="rounded-[30px] px-10 h-[65vh] p-5 py-10 border
-     border-black  text-white grid grid-cols-5 ">
-      <div className=" col-span-1 text-text">
+    <div className="rounded-[30px] px-10 xl:h-[65vh] lg:h-[65vh] p-5 py-10 border
+     border-black text-white grid xl:grid-cols-5 lg:grid-cols-5 grid-cols-1 ">
+      <div className=" col-span-1 xl:text-text lg:text-text">
         <Link to="/">Back to top </Link>
       </div>
-      <div className="flex flex-col col-span-1 ml-[-39px] text-text gap-y-10 ">
+      <div className="flex flex-col col-span-1 xl:ml-[-39px] lg:ml-[-39px] xl:text-text lg:text-text gap-y-10 ">
         <p> Family owned and <br /> operated since 2022.</p>
         <p>
           All rights reserved .
@@ -25,7 +25,7 @@ const Footer = () => {
         <p className=" text-gray-400">Data Privacy </p>
       </div>
 
-      <div className="text-text w-[35%]">
+      <div className="text-text xl:w-[35%] lg:w-[35%]">
         <p className=" flex justify-between items-center"><span>  NJ </span> <span className=" text-[12px] mr-[20px] text-gray-400">HQ</span></p>
         <p> 10:26 AM</p>
       </div>

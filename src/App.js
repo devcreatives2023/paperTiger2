@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <>
-      <motion.div className="bg-black">
+      <motion.div className=" overflow-x-hidden xl:overflow-auto lg:overflow-auto bg-black">
         <AnimatePresence>
           <BrowserRouter>
             <Routes>
