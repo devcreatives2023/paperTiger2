@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <motion.div
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="bg-body px-4 xl:px-0 lg:px-0"
+      className="bg-body px-4 w-screen xl:px-0 lg:px-0"
     >
       <motion.div className=" xl:mt-[-50px] lg:mt-[-50px] mt-[-40px]">
         <Navbar color="black" contact="1.1rem" position="top-0" />
@@ -50,7 +50,7 @@ const Home = () => {
           </p>
         </div>
       </motion.div>
-      <div className=" xl:w-[100%] lg:w-[100%] w-[90%]  bg-body">
+      <div className=" xl:w-[100%] lg:w-[100%] w-[100%]  bg-body">
         <div className=" xl:p-main lg:p-main px-2 ">
           <OurStory />
           <Services />

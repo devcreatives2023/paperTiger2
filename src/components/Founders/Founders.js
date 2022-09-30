@@ -54,7 +54,7 @@ const Founders = () => {
     setMouse2(!isMouse);
   };
   return (
-    <div className="flex flex-col gap-y-10 xl:h-[60vh] lg:h-[60vh] h-[50vh] w-screen">
+    <div className="flex   flex-col gap-y-10 xl:h-[60vh] lg:h-[60vh] h-[50vh] ">
       <motion.div
         onMouseEnter={showImg}
         onMouseLeave={showImg}
@@ -82,7 +82,8 @@ const Founders = () => {
           </div>
 
           <div className=" flex flex-col gap-y-2 
-          font-parg justify-center xl:text-text lg:text-text xl:items-center lg:items-center">
+          font-parg justify-center text-[10px] xl:text-text lg:text-text 
+          xl:items-center lg:items-center">
             <p>President </p>
             <p>
               if ur interstedi hiring us ,
@@ -110,22 +111,13 @@ const Founders = () => {
       >
         <div className=" flex flex-col xl:flex-row lg:flex-row gap-4 col-span-1 text-text items-center uppercase"></div>
         <div className="">
-          {/* <motion.img
-            initial="exit"
-            animate={isMouse2 ? "enter" : "exit"}
-            exit="exit"
-            variants={imgvariant}
-            src={images.founder1}
-            className=" grayscale-[100%] rounded-[40px] relative top-[-130px]  
-             transition-300 h-[450px] object-cover left-[-90px] z-10"
-          /> */}
         </div>
         <div className=" col-span-2 grid grid-cols-2 ">
           <div className=" flex font-parg  font-semibold xl:text-[2rem] lg:text-[2rem]  items-center uppercase">
             Eren yeger
           </div>
 
-          <div className=" flex flex-col gap-y-2 font-parg justify-center  xl:text-text lg:text-text  xl:items-center lg:tems-center ">
+          <div className=" flex flex-col  text-[10px] gap-y-2 font-parg justify-center  xl:text-text lg:text-text  xl:items-center lg:tems-center ">
             <p>Chef </p>
             <p>
               if ur interstedi hiring us ,
@@ -134,17 +126,7 @@ const Founders = () => {
               </Link>
             </p>
           </div>
-          {/* <motion.div
-            initial="exit"
-            animate={isMouse2 ? "enter" : "exit"}
-            exit="exit"
-            variants={textVariant}
-            className=" bg-red-700 flex  font-title absolute left-0 z-0 border rounded-[60px] mt-[-17px] text-[3rem] tracking-widest  uppercase w-[100% ] p-7 h-[18vh]"
-          >
-              
-            <span>PaperTiger Can Do every thing </span>
-            <span> PaperTiger Can Do every thing</span>
-          </motion.div> */}
+
         </div>
       </motion.div>
     </div>
