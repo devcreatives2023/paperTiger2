@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Icons } from "../../constants";
 import { motion } from "framer-motion";
-import Sidebar from "./Sidebar";
 // variants for navbar links motion with underline
 const underline = {
   default: {
