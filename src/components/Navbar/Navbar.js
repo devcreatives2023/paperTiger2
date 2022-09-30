@@ -166,23 +166,24 @@ const Navbar = ({ color, contact }) => {
         </motion.div>
       </div>
     </nav>
-      <div
-        className="visible  xl:invisible
-         lg:hidden md:inline-block w-[100%] h-[100%]"
-        style={{ transition: "all 0.5s ease-in" }}
+
+  <div
+  className="visible  xl:invisible
+  lg:hidden md:inline-block w-[100%] h-[100%]"
+  style={{ transition: "all 0.5s ease-in" }}
       >
-        <button onClick={() => setShow(!show)}>
+        {/* <button onClick={() => setShow(!show)}>
           <Icons.HiOutlineMenuAlt4
             className="absolute right-[30px] 
-          text-[2rem] top-2"
-          />
+            text-[2rem] top-2"
+            />
         </button>
         <motion.nav
-          // initial={false}
+          initial={false}
           variants={menuVariants}
           animate={show ? "opened" : "closed"}
           className=" bg-[#eeeeeee8] h-screen fixed top-[-90px] w-[100%] left-0 right-0 z-10 p-10 flex flex-col   "
-        >
+          >
           <motion.button
             className=" top-[140px]  text-[28px] right-10 absolute text-black "
             onClick={() => setShow(!show)}
@@ -203,7 +204,7 @@ const Navbar = ({ color, contact }) => {
               <Link to="/contact">Contact us</Link>
             </li>
           </ul>
-        </motion.nav>
+        </motion.nav> */}
       </div>
         </>
 );
