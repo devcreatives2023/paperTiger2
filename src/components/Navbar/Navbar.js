@@ -184,12 +184,12 @@ const Navbar = ({ color, contact }) => {
           className=" bg-[#eeeeeee8] h-screen fixed top-[-90px] w-[100%] left-0 right-0 z-10 p-10 flex flex-col   "
         >
           <motion.button
-            className="absolute right-12 text-[22px] "
+            className=" top-[140px]  text-[28px] right-10 absolute text-black "
             onClick={() => setShow(!show)}
           >
             <Icons.GiTireIronCross />
           </motion.button>
-          <ul className="flex flex-col items-center w-[50%] m-auto  leading-[70px]  text-2xl">
+          <ul className="flex flex-col  w-[50%] m-auto mt-[240px] leading-[70px]  text-2xl">
             <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
               <Link to="/work">work</Link>
             </li>
