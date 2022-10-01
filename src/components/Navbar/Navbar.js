@@ -36,20 +36,10 @@ const contactVariants = {
     },
   },
 };
-// sidebar
-const menuVariants = {
-  opened: {
-    opacity: 1,
-    y: 0,
-  },
-  closed: {
-    opacity: 0,
-    y: 40,
-  },
-};
+
 const Navbar = ({ color, contact }) => {
-  // sidebar
   const [show, setShow] = React.useState(false);
+
   // add motion to contact us
   const [contactus, setContactus] = React.useState(false);
   const contactmotion = () => {
@@ -84,7 +74,7 @@ const Navbar = ({ color, contact }) => {
   return (
     <>
     <nav
-      className={`fixed xl:w-[100%] lg:w-[100%] h-[40px] xl:h-[80px] w-screen  xl:py-3 lg:py-3 py-[52px] ${
+      className={`fixed xl:w-[100%] lg:w-[100%] h-[40px] xl:h-[80px] w-screen  top-0 lg:py-3 py-[52px] ${
         lastscrollY ? " bg-body " : " bg-transparent"
       } z-10 transition-all duration-300   ${show && "hidden"}`}
     >
@@ -166,45 +156,6 @@ const Navbar = ({ color, contact }) => {
       </div>
     </nav>
 
-  <div
-  className="visible  xl:invisible
-  lg:hidden md:inline-block w-[100%] h-[100%]"
-  style={{ transition: "all 0.5s ease-in" }}
-      >
-        <button onClick={() => setShow(!show)}>
-          <Icons.HiOutlineMenuAlt4
-            className="absolute right-[30px] 
-            text-[2rem] top-2"
-            />
-        </button>
-        <motion.nav
-          initial={false}
-          variants={menuVariants}
-          animate={show ? "opened" : "closed"}
-          className=" bg-[#eeeeeee8] h-screen fixed top-[-90px] w-[100%] left-0 right-0 z-10 p-10 flex flex-col   "
-          >
-          <motion.button
-            className=" top-[140px]  text-[28px] right-10 absolute text-black "
-            onClick={() => setShow(!show)}
-          >
-            <Icons.GiTireIronCross />
-          </motion.button>
-          <ul className="flex flex-col  w-[50%] m-auto mt-[240px] leading-[70px]  text-2xl">
-            <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
-              <Link to="/work">work</Link>
-            </li>
-            <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
-              <Link to="/">about</Link>
-            </li>
-            <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
-              <Link to="/contact">Careers</Link>
-            </li>
-            <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
-              <Link to="/contact">Contact us</Link>
-            </li>
-          </ul>
-        </motion.nav>
-      </div>
         </>
 );
 };

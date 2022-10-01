@@ -10,6 +10,7 @@ import {
   PaperTiger,
   Process,
   Services,
+  Sidebar,
 } from "../../components";
 
 const Home = () => {
@@ -25,8 +26,14 @@ const Home = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
       className="bg-body px-4 w-screen xl:px-0 lg:px-0"
     >
-      <motion.div className=" xl:mt-[-50px] lg:mt-[-50px] mt-[-40px]">
+      <div className=" hidden xl:inline-block lg:inline-block">
         <Navbar color="black" contact="1.1rem" position="top-0" />
+      </div>
+      <div className=" inline-block xl:hidden lg:hidden">
+        <Sidebar />
+      </div>
+      <motion.div className=" xl:mt-[0px] lg:mt-[-50px] mt-[-40px]">
+
         <div
           className="uppercase  xl:mt-12 pt-[60px]
        lg:mt-12 text-center justify-center items-center relative top-10 p-5 "
