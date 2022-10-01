@@ -19,7 +19,7 @@ const Sidebar = () => {
   return (
     <div>
       <div
-        className=" w-[100%] h-[100%]"
+        className="  w-[100%] h-[100%]"
         style={{ transition: "all 0.5s ease-in" }}
       >
         <div className="flex justify-between">
@@ -37,15 +37,15 @@ const Sidebar = () => {
           initial={false}
           variants={menuVariants}
           animate={show ? "opened" : "closed"}
-          className=" bg-[#eeeeeee8] h-screen fixed top-[-90px] w-[100%] left-0 right-0 z-10 p-10 flex flex-col   "
+          className=" bg-[#eeeeeef3] h-screen z-10 fixed top-0 w-[100%] left-0 right-0  p-10 flex flex-col   "
         >
           <motion.button
-            className=" top-[140px]  text-[28px] right-10 absolute text-black "
-            onClick={() => setShow(show)}
+            className=" top-[20px]  text-[28px] right-7 absolute text-black "
+            onClick={() => setShow(!show)}
           >
             <Icons.GiTireIronCross />
           </motion.button>
-          <ul className="flex flex-col  w-[50%] m-auto mt-[240px] leading-[70px]  text-2xl">
+          <ul className="flex flex-col  w-[50%] m-auto mt-[80px] leading-[70px]  text-2xl">
             <li className=" border-t-2 border-black w-[100%]  text-center  hover:opacity-[0.8]">
               <Link to="/work">work</Link>
             </li>

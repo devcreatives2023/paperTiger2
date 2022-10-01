@@ -14,10 +14,10 @@ const Guiding = () => {
     border-black grid
       xl:grid-cols-4 lg:grid-cols-4 grid-cols-1 items-start py-4"
     >
-      <div className=" col-span-1 xl:text-text text-[10px] lg:text-text uppercase  ">
+      <div className=" col-span-1 xl:text-text  lg:text-text uppercase  ">
         <p className=" leading-5">
-          <span className=" flex xl:gap-x-2 lg:gap-x-2  items-center">
-            <Icons.FaCircle /> Guiding
+          <span className=" flex xl:gap-x-2 lg:gap-x-2   items-center">
+            <Icons.FaCircle  /> Guiding
           </span>
           <span className="ml-9"> Principles </span>
         </p>
